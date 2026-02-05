@@ -17,11 +17,11 @@ chrome.runtime.onMessage.addListener((message) => {
       })
     })
     .then(res => {
-      console.log("[LeetSync] FETCH RESPONSE STATUS:", res.status);
+      console.log("[LeetSync] FETCH STATUS:", res.status);
       return res.json();
     })
     .then(data => {
-      console.log("[LeetSync] FETCH RESPONSE DATA:", data);
+      console.log("[LeetSync] FETCH DATA:", data);
     })
     .catch(err => {
       console.error("[LeetSync] FETCH ERROR:", err);

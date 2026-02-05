@@ -5,10 +5,10 @@ from datetime import datetime
 
 app = FastAPI()
 
-# 🔥 THIS IS THE IMPORTANT PART 🔥
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # allow chrome-extension://*
+    allow_origins=["*"],  
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
